@@ -1,4 +1,4 @@
-from array import *
+from array import *  # noqa: F403
 def InsertionSort(array):
     for i in range(1, len(array), 1):
         key = array[i]
@@ -9,6 +9,6 @@ def InsertionSort(array):
         array[j+1]=key
     return array
 
-arr = array("i", [7, 2, 8, 5])
+arr = array("i", [7, 2, 8, 5])  # noqa: F405
 output = InsertionSort(arr)
 print(output)   

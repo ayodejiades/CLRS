@@ -1,4 +1,4 @@
-from array import *
+from array import *  # noqa: F403
 def swap(array, i, j):
     temp = array[i]
     array[i] = array[j]
@@ -13,6 +13,6 @@ def SelectionSort(array):
             swap(array, i, minIndex)
     return array
 
-arr = array("i", [7, 2, 8, 5])
+arr = array("i", [7, 2, 8, 5])  # noqa: F405
 output = SelectionSort(arr)
 print(output)

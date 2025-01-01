@@ -1,4 +1,4 @@
-from array import *
+from array import *  # noqa: F403
 def swap(array, i, j):
     temp = array[i]
     array[i] = array[j]
@@ -10,6 +10,6 @@ def BubbleSort(array):
                 swap(array, j, j + 1)
     return array
 
-arr = array("i", [7, 2, 8, 5])
+arr = array("i", [7, 2, 8, 5])  # noqa: F405
 output = BubbleSort(arr)
 print(output)           
